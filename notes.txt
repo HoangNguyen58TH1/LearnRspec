@@ -1,0 +1,51 @@
+[...]: Match với bất kì kí tự trong dấu ngoặc Có thể là các kí tự đơn lẻ [abc] : a , b hoặc c. 1 tập hợp các kí tự như [a-z]
+
++ Một hoặc nhiều lần
+
+# 10/11/2020
+- Double(Mock) Test
++ Cho phép thử nghiệm Class1 mà k cần có Class2. Mặc dù 2 Class liên quan đến nhau.
++ VD: mình viết Class1 còn ng khác viết Class2 thì k thể đợi ngta viết xong rồi mình copy Class đó được. Vậy nên khi test, nếu có lỗi biết ngay Class mình viết bị lỗi.
+
+- Stubs
++ Là 1 version cũ của Double(Mock)
+
+- Hooks: before/ after
++ before(:all)
++ before(:each)
++ after(:each)
++ after(:all)
+
+- Tags: I want check rspec run slow or fast.
++ rspec --tag slow tag_spec.rb
++ rspec --tag fast tag_spec.rb
+
+- RSpec Subjects help code clean most, short code most.
+
+- Đôi khi need using code spec lại --> Helper
+- dog.nil?
+- Ruby return statement final in block of method.
+
+- Metadata: siêu dữ liệu
++ data --> describe, context, it blocks.
++ metadata --> add data owr describe, context vaf ussing it.
+
+- Filtering:
++ position: tích cực
++ negative: tiêu cực
+--> 2 cái trên gọi là 'tags' giúp mình có thể check được những spec positive or những spec negative.
+--> kiểu như là phân loại cho mình biết nó là những cái đúng vs những cái sai thôi.
+
++ () --> using để so sánh vs phép tính cụ thể
++ {} --> using để so sánh vs những phép tính lỗi
++ rspec filename.rb:10 --> chỉ run spec ở cái context/it đó thôi.
+
++ Formaters: 
+  -- format progress: default
+  -- format doc(documentation)
+
+- Expectation(2012 trở lên). Dưới 2012 ngta dùng should()
+  --> Nên using Expectation()
+
+- 
+
